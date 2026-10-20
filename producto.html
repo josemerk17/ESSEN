@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bleu de Chanel EDP — ESSEN">
+    <title>Bleu de Chanel EDP — ESSEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header product-site-header">
+      <a class="wordmark" href="index.html">ESSEN</a>
+      <nav class="header-actions" aria-label="Acciones">
+        <button class="icon-button search-icon" type="button" aria-label="Abrir búsqueda" aria-expanded="false" aria-controls="site-search"></button>
+        <button class="icon-button menu-icon" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+        <a class="icon-button cart-icon" href="index.html#productos" aria-label="Carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 3h2l2.2 11.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L21 7H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg></a>
+      </nav>
+    </header>
+    <form class="site-search" id="site-search" role="search" hidden>
+      <label class="visually-hidden" for="search-input">Buscar fragancias</label>
+      <input id="search-input" type="search" placeholder="Buscar fragancias…" autocomplete="off">
+      <button type="button" class="search-close" aria-label="Cerrar búsqueda">×</button>
+      <p class="search-feedback" aria-live="polite"></p>
+      <div class="site-search-results" id="search-results" aria-label="Productos sugeridos"></div>
+    </form>
+    <nav class="site-menu" id="site-menu" aria-label="Menú principal" hidden>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#productos">Arabes</a>
+      <a href="index.html#coleccion">Diseñador</a>
+      <a href="producto.html">Nicho</a>
+    </nav>
+    <main class="product-page">
+      <section class="product-detail">
+        <div class="detail-image"><img src="img/bleuDeChanel.jpg" alt="Frasco de perfume Bleu de Chanel"></div>
+        <div class="detail-summary">
+          <h1>BLEU DE<br>CHANEL EDP</h1>
+          <p class="detail-price">$3600</p>
+          <button class="button button-dark product-add-button" type="button">Añadir al carrito</button>
+        </div>
+      </section>
+      <section class="product-description">
+        <h2>BLEU DE CHANEL EDP</h2>
+        <p>Una fragancia amaderada y aromática que representa la elegancia, la libertad y la confianza. Sus notas cítricas se combinan con acordes ambarinos y maderas intensas, creando un aroma sofisticado, versátil y magnético. Diseñado para quienes dejan huella sin necesidad de llamar la atención.</p>
+        <ul>
+          <li>Familia olfativa: Amaderada aromática</li>
+          <li>Personalidad: Elegante · Sofisticada · Atemporal</li>
+          <li>Ideal para: Citas, ocasiones especiales y uso diario.</li>
+        </ul>
+      </section>
+      <section class="section products-section" id="productos">
+        <h2 class="section-title">LOS MÁS BUSCADOS</h2>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="wordmark" href="index.html">ESSEN</a><p>THE ART OF FRAGRANCE.</p><div class="footer-bottom"><span>© 2026 ESSEN. PROYECTO DEMOSTRATIVO.</span><a href="index.html">VOLVER AL INICIO ↑</a></div></footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
+
+
+

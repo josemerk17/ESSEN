@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ESSEN — The Art of Fragrance">
+    <title>ESSEN — The Art of Fragrance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body class="home-page">
+    <header class="site-header">
+      <a class="wordmark" href="index.html">ESSEN</a>
+      <nav class="header-actions" aria-label="Acciones">
+        <button class="icon-button search-icon" type="button" aria-label="Abrir búsqueda" aria-expanded="false" aria-controls="site-search"></button>
+        <button class="icon-button menu-icon" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+        <a class="icon-button cart-icon" href="#productos" aria-label="Carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 3h2l2.2 11.1a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.4L21 7H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg></a>
+      </nav>
+    </header>
+
+    <form class="site-search" id="site-search" role="search" hidden>
+      <label class="visually-hidden" for="search-input">Buscar fragancias</label>
+      <input id="search-input" type="search" placeholder="Buscar fragancias…" autocomplete="off">
+      <button type="button" class="search-close" aria-label="Cerrar búsqueda">×</button>
+      <p class="search-feedback" aria-live="polite"></p>
+      <div class="site-search-results" id="search-results" aria-label="Productos sugeridos"></div>
+    </form>
+    <nav class="site-menu" id="site-menu" aria-label="Menú principal" hidden>
+      <a href="index.html">Inicio</a>
+      <a href="#productos">Arabes</a>
+      <a href="#coleccion">Diseñador</a>
+      <a href="producto.html">Nicho</a>
+    </nav>
+    <main>
+      <section class="hero">
+        <img class="hero-image" src="img/portada.jpg" alt="Fragancia en composición editorial">
+        <div class="hero-copy">
+          <h1>THE ART OF<br>FRAGRANCE</h1>
+          <p>Descubre fragancias que expresan quién eres con una selección de aromas únicos para acompañar cada momento y dejar una impresión inolvidable.</p>
+        </div>
+        <a class="button button-light" href="#productos">EXPLORAR</a>
+      </section>
+
+      <section class="section products-section" id="productos">
+        <h2 class="section-title">LOS MÁS BUSCADOS</h2>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="brand-story">
+        <div class="story-image-wrap"><img src="img/image-wrap.jpg"></div>
+        <div class="story-copy"><p>En ESSEN creemos que cada aroma cuenta una historia. Por eso, seleccionamos fragancias que combinan personalidad, calidad y carácter, para ayudarte a encontrar ese aroma que se siente auténticamente tuyo. Descubre tu próxima fragancia y haz de cada momento una experiencia única.</p></div>
+      </section>
+
+      <section class="section collection-section" id="coleccion">
+        <h2 class="section-title">NUESTRAS SECCIONES</h2>
+        <div class="category-grid">
+          <a class="category-card" href="#productos">ÁRABES</a>
+          <a class="category-card" href="#productos">DISEÑADOR</a>
+          <a class="category-card" href="#productos">NICHO</a>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
+
+
+
