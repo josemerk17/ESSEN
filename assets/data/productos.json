@@ -1,42 +1,46 @@
 [
-  {
-    "id": "bleu-de-chanel",
-    "nombre": "Bleu de Chanel EDP",
-    "marca": "Chanel",
-    "categoria": "Diseñador",
-    "descripcion": "Fragancia amaderada y aromática, elegante y versátil.",
-    "precio": 3600,
-    "imagen": "img/bleuDeChanel.jpg",
-    "url": "producto.html"
-  },
-  {
-    "id": "dior-sauvage",
-    "nombre": "Dior Sauvage edp",
-    "marca": "Dior",
-    "categoria": "Diseñador",
-    "descripcion": "Aroma fresco y especiado de carácter intenso.",
-    "precio": null,
-    "imagen": "img/diorSauvage.jpg",
-    "url": "producto.html"
-  },
-  {
-    "id": "valentino-born-in-roma-intense",
-    "nombre": "Valentino Born in Roma Intense",
-    "marca": "Valentino",
-    "categoria": "Diseñador",
-    "descripcion": "Fragancia intensa de Valentino.",
-    "precio": null,
-    "imagen": "img/valentinoBornInRomaIntense.jpg",
-    "url": "producto.html"
-  },
-  {
-    "id": "louis-vuitton-imagination",
-    "nombre": "Imagination",
-    "marca": "Louis Vuitton",
-    "categoria": "Diseñador",
-    "descripcion": "Fragancia Imagination de Louis Vuitton.",
-    "precio": null,
-    "imagen": "img/lvImgination.jpg",
-    "url": "producto.html"
-  }
+    {
+        "id":  "bleu-de-chanel",
+        "nombre":  "Bleu de Chanel EDP",
+        "marca":  "Chanel",
+        "categoria":  "Diseñador",
+        "descripcion":  "Fragancia amaderada y aromática, elegante y versátil.",
+        "precio":  3600,
+        "imagen":  "img/bleuDeChanel.jpg",
+        "url":  "producto.html",
+        "stock":  8
+    },
+    {
+        "id":  "dior-sauvage",
+        "nombre":  "Dior Sauvage edp",
+        "marca":  "Dior",
+        "categoria":  "Diseñador",
+        "descripcion":  "Aroma fresco y especiado de carácter intenso.",
+        "precio":  3760,
+        "imagen":  "img/diorSauvage.jpg",
+        "url":  "producto.html",
+        "stock":  10
+    },
+    {
+        "id":  "valentino-born-in-roma-intense",
+        "nombre":  "Valentino Born in Roma Intense",
+        "marca":  "Valentino",
+        "categoria":  "Diseñador",
+        "descripcion":  "Fragancia intensa de Valentino.",
+        "precio":  3990,
+        "imagen":  "img/valentinoBornInRomaIntense.jpg",
+        "url":  "producto.html",
+        "stock":  6
+    },
+    {
+        "id":  "louis-vuitton-imagination",
+        "nombre":  "Imagination",
+        "marca":  "Louis Vuitton",
+        "categoria":  "Diseñador",
+        "descripcion":  "Fragancia Imagination de Louis Vuitton.",
+        "precio":  7050,
+        "imagen":  "img/lvImgination.jpg",
+        "url":  "producto.html",
+        "stock":  4
+    }
 ]
