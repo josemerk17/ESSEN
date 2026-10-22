@@ -767,13 +767,7 @@ main,
   }
 }
 
-
-
-
-
-
-
-/* Carrito */
+/* 10. Carrito y acciones de compra */
 .cart-icon { overflow: visible; }
 .cart-count { position: absolute; top: -3px; right: -8px; min-width: 18px; height: 18px; padding: 0 4px; display: grid; place-items: center; border-radius: 50%; background: #090909; color: #fff; font-size: 10px; font-weight: 700; }
 .cart-count[hidden] { display: none; }
@@ -792,7 +786,7 @@ main,
 .cart-total { padding-top: 14px; border-top: 1px solid var(--line); font-weight: 700; }
 .cart-clear { width: 100%; padding: 11px; border: 1px solid var(--line); border-radius: 99px; background: white; font: inherit; cursor: pointer; }
 
-/* Proceso de compra */
+/* Formulario de compra */
 .checkout-start, .checkout-submit { width: 100%; min-height: 44px; border: 0; border-radius: 999px; background: #090909; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
 .checkout-start { margin: 0 0 10px; }
 .checkout-start[hidden] { display: none; }
@@ -812,8 +806,7 @@ main,
 
 .checkout-start:disabled { opacity: .55; cursor: wait; }
 
-
-/* Tarjetas válidas con enlace e interacción separados */
+/* 11. Tarjetas, foco y estados deshabilitados */
 .product-card-link { position: absolute; inset: 0; display: block; }
 .product-details { z-index: 2; }
 .add-to-cart-button:disabled { opacity: .65; cursor: not-allowed; }
@@ -821,7 +814,7 @@ main,
 .cart-remove { padding: 4px 7px; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 11px; text-decoration: underline; cursor: pointer; }
 .cart-item-info small { color: var(--muted); font-size: 11px; }
 
-/* Portada móvil: composición basada en la referencia ESSEN */
+/* 12. Ajustes móviles de portada */
 @media (max-width: 700px) {
   .home-page { padding: 13px 4.2% 30px; }
   .home-page .site-header { min-height: 56px; padding-bottom: 10px; }
@@ -928,3 +921,166 @@ main,
     font-size: 27px;
   }
 }
+
+/* 13. Ajustes de escritorio de la ficha */
+@media (min-width: 901px) {
+  .product-page { padding: 21px 3.4% 0; }
+  .product-detail {
+    grid-template-columns: 1.25fr 1fr;
+    gap: 27px;
+    align-items: center;
+  }
+  .detail-image {
+    aspect-ratio: 1.21;
+    border-radius: 58px;
+  }
+  .detail-summary { padding: 20px 0; }
+  .detail-summary h1 {
+    margin-bottom: 22px;
+    font-size: clamp(56px, 5.7vw, 82px);
+    line-height: .94;
+    letter-spacing: -.055em;
+  }
+  .detail-price {
+    margin-bottom: 34px;
+    font-size: clamp(34px, 3.2vw, 46px);
+  }
+  .product-add-button {
+    width: min(100%, 350px);
+    min-height: 67px;
+  }
+  .product-description { padding: 52px 2.2% 0; }
+  .product-description h2 { margin-bottom: 30px; font-size: 30px; }
+  #productos { padding-top: 55px; }
+  #productos .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+  #productos .product-image { aspect-ratio: .72; }
+}
+
+/* 14. Estado hover del CTA de compra */
+.product-add-button {
+  border: 1px solid #090909;
+  background: #090909;
+  color: #fff;
+  transition: background-color .2s ease, color .2s ease;
+}
+.product-add-button:hover,
+.product-add-button:focus-visible {
+  background: #fff;
+  color: #090909;
+}
+
+/* 15. Ajustes móviles de la ficha */
+@media (max-width: 700px) {
+  .product-site-header {
+    min-height: 82px;
+    padding-inline: 7.5%;
+  }
+  .product-site-header .wordmark { font-size: 32px; letter-spacing: -1.8px; }
+  .product-site-header .header-actions { gap: 14px; }
+  .product-site-header .icon-button { width: 25px; height: 34px; }
+  .product-site-header .search-icon::before { width: 17px; height: 17px; border-width: 2.5px; }
+  .product-site-header .search-icon::after { right: 0; bottom: 5px; width: 8px; }
+  .product-site-header .menu-icon { gap: 4px; }
+  .product-site-header .menu-icon span { width: 22px; height: 2.5px; }
+  .product-site-header .cart-icon svg { width: 29px; height: 29px; }
+
+  .product-page { padding: 0 6.7%; }
+  .product-detail { grid-template-columns: 1fr; gap: 0; }
+  .detail-image { aspect-ratio: 1.04; border-radius: 36px; }
+  .detail-summary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 4px 0;
+  }
+  .detail-summary h1 {
+    grid-column: 1 / -1;
+    margin: 0 0 2px;
+    font-size: clamp(27px, 7.6vw, 32px);
+    line-height: 1;
+    letter-spacing: -.045em;
+    white-space: nowrap;
+  }
+  .detail-price {
+    margin: 0;
+    font-size: clamp(24px, 6.2vw, 27px);
+    letter-spacing: -.03em;
+  }
+  .product-add-button {
+    width: 114px;
+    min-height: 32px;
+    padding-inline: 8px;
+    font-size: 10px;
+  }
+
+  .product-description { padding: 26px 4px 0; }
+  .product-description h2 { margin-bottom: 20px; font-size: 18px; }
+  .product-description p,
+  .product-description li { font-size: 18px; line-height: 1.22; }
+  .product-description ul { margin-top: 22px; }
+  .product-description li + li { margin-top: 2px; }
+
+  .product-page #productos { padding-top: 34px; }
+  .product-page #productos .section-title {
+    margin: 0 0 21px 5px;
+    font-size: 24px;
+    letter-spacing: -.025em;
+  }
+  .product-page #productos .product-grid {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 46%;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 2px 8px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+  .product-page #productos .product-grid::-webkit-scrollbar { display: none; }
+  .product-page #productos .product-image {
+    min-width: 0;
+    aspect-ratio: .72;
+    border-radius: 37px;
+    scroll-snap-align: start;
+  }
+  .product-page #productos .product-details { padding: 42px 10px 10px; gap: 5px 7px; }
+  .product-page #productos .product-details .product-name { font-size: 12px; }
+  .product-page #productos .product-price { font-size: 15px; }
+  .product-page #productos .add-to-cart-button {
+    min-width: 0;
+    min-height: 31px;
+    padding-inline: 16px;
+    font-size: 11px;
+  }
+}
+
+/* Remates compartidos para una presentación consistente */
+.site-footer {
+  margin-top: 54px;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer > p {
+  font-size: 10px;
+}
+
+:where(a, button, input):focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    margin-top: 38px;
+    padding-top: 34px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
